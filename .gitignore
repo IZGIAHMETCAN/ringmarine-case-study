@@ -1,0 +1,22 @@
+# Rust build output
+target/
+**/target/
+
+# Local environment / secrets — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Deployment artefacts that contain real identifiers — see scripts/check-before-push.sh
+*.tfstate
+*.tfstate.backup
+task-definition*.json
+rollback-*.json
